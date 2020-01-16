@@ -1,0 +1,222 @@
+FONT
+=====
+
+  - 1366px {
+    h1 {
+      font-family: 'Futura Book';
+      font-size: 27px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    h2 {
+      font-family: 'Futura Book';
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h3 {
+      font-family: 'Futura Book';
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h4 {
+      font-family: 'Futura Book';
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h5 {
+      font-family: 'Futura Book';
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    p1 {
+      font-family: 'Futura Book';
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    p2 {
+      font-family: 'Futura Book';
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    p3 {
+      font-family: 'Futura Book';
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  - 1024px {
+    h1 {
+      font-family: 'Futura Book';
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    h2 {
+      font-family: 'Futura Book';
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h3 {
+      font-family: 'Futura Book';
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h4 {
+      font-family: 'Futura Book';
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h5 {
+      font-family: 'Futura Book';
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    p1 {
+      font-family: 'Futura Book';
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    p2 {
+      font-family: 'Futura Book';
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    p3 {
+      font-family: 'Futura Book';
+      font-size: 13px;
+      line-height: 22px;
+    }
+  }
+
+  - 768px {
+    h1 {
+      font-family: 'Futura Book';
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    h2 {
+      font-family: 'Futura Book';
+      font-size: 29px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h3 {
+      font-family: 'Futura Book';
+      font-size: 27px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h4 {
+      font-family: 'Futura Book';
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h5 {
+      font-family: 'Futura Book';
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    p1 {
+      font-family: 'Futura Book';
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    p2 {
+      font-family: 'Futura Book';
+      font-size: 17px;
+      line-height: 22px;
+    }
+
+    p3 {
+      font-family: 'Futura Book';
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  - 480px {
+    h1 {
+      font-family: 'Futura Book';
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    h2 {
+      font-family: 'Futura Book';
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h3 {
+      font-family: 'Futura Book';
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h4 {
+      font-family: 'Futura Book';
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    
+    h5 {
+      font-family: 'Futura Book';
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    p1 {
+      font-family: 'Futura Book';
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    p2 {
+      font-family: 'Futura Book';
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    p3 {
+      font-family: 'Futura Book';
+      font-size: 11px;
+      line-height: 22px;
+    }
+  }

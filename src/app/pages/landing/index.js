@@ -1,10 +1,13 @@
 import React from "react";
 import { Container } from "./styles";
+import Banner from "./sections/banner";
+import NewArrivals from "./sections/new-arrivals";
 
 const Landing = () => {
   return (
     <Container>
-      <p>Landing Page - env</p>
+      <Banner />
+      <NewArrivals />
     </Container>
   );
 };

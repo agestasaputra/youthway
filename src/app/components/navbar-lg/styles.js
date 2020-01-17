@@ -1,0 +1,102 @@
+import styled from "styled-components";
+import color from "config/guidlines/color";
+
+export const Container = {
+  Wrapper: styled.div`
+    display: flex;
+    flex-flow: row nowrap;
+    height: 10%;
+    padding: 0% 1%;
+    background: ${color.brand.primaryWhite};
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  `,
+  Left: styled.div`
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 70%;
+    }
+  `,
+  Middle: styled.div`
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      margin: 0px;
+      cursor: pointer;
+
+      &:hover {
+        color: red;
+      }
+    }
+  `,
+  Right: styled.div`
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    /* svg {
+      margin-left: 15%;
+    } */
+  `
+};
+
+export const NavbarMenu = {
+  Wrapper: styled.div`
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+  `,
+  Left: styled.div`
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `,
+  Middle: styled.div`
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `,
+  Right: styled.div`
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `
+};
+
+export const NavbarMenuRight = {
+  Wrapper: styled.div`
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    width: 100%;
+  `,
+  Left: styled.div`
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  `,
+  Middle: styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1%;
+  `,
+  Right: styled.div`
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `
+};

@@ -7,7 +7,7 @@ import {
 } from "config/guidlines/display";
 
 export const H1Styles = styled.h1`
-  font-family: "Futura Book";
+  font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};
   font-size: 27px;
   font-weight: bold;
@@ -23,14 +23,13 @@ export const H1Styles = styled.h1`
   }
 
   @media (max-width: ${XS_DEVICES_WIDTH}) {
-    font-family: "Futura Book";
     font-size: 18px;
     line-height: 15px;
   }
 `;
 
 export const H2Styles = styled.h2`
-  font-family: "Futura Book";
+  font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};
   font-size: 22px;
   font-weight: bold;
@@ -52,7 +51,7 @@ export const H2Styles = styled.h2`
 `;
 
 export const H3Styles = styled.h3`
-  font-family: "Futura Book";
+  font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};
   font-size: 20px;
   font-weight: bold;
@@ -74,7 +73,7 @@ export const H3Styles = styled.h3`
 `;
 
 export const H4Styles = styled.h4`
-  font-family: "Futura Book";
+  font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};
   font-size: 17px;
   font-weight: bold;
@@ -96,7 +95,7 @@ export const H4Styles = styled.h4`
 `;
 
 export const H5Styles = styled.h5`
-  font-family: "Futura Book";
+  font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};
   font-size: 14px;
   font-weight: bold;
@@ -118,7 +117,7 @@ export const H5Styles = styled.h5`
 `;
 
 export const P1Styles = styled.p`
-  font-family: "Futura Book";
+  font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};
   font-size: 18px;
   margin: 0px;
@@ -139,7 +138,7 @@ export const P1Styles = styled.p`
 `;
 
 export const P2Styles = styled.p`
-  font-family: "Futura Book";
+  font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};
   font-size: 16px;
   margin: 0px;
@@ -160,7 +159,7 @@ export const P2Styles = styled.p`
 `;
 
 export const P3Styles = styled.p`
-  font-family: "Futura Book";
+  font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};
   font-size: 14px;
   margin: 0px;

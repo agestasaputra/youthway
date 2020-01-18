@@ -1,11 +1,10 @@
 import React from "react";
 import { Container } from "./styles";
-import LandingBanner from "app/assets/banner/landing-banner.jpg";
 
-const Banner = () => {
+const Banner = ({ img }) => {
   return (
     <Container>
-      <img src={LandingBanner} alt="landing-banner" />
+      <img src={img} alt="landing-banner" />
     </Container>
   );
 };

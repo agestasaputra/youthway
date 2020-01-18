@@ -3,6 +3,7 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import Landing from "app/pages/landing";
 import NavbarSmall from "app/components/navbar-sm";
 import NavbarLarge from "app/components/navbar-lg";
+import Footer from "app/components/footer";
 // import AuthenticatedRoute from "./AuthenticatedRoute";
 // import UnauthenticatedRoute from "./UnauthenticatedRoute";
 
@@ -21,6 +22,7 @@ const Routes = () => {
         {/* <AuthenticatedRoute path="/home" component={Home} props={childProps} /> */}
         <Route path="/" component={Landing} />
       </Switch>
+      <Footer />
     </React.Suspense>
   );
 };

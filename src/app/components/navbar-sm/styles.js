@@ -39,6 +39,14 @@ export const ContainerLeft = {
     align-items: center;
     justify-content: center;
     border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+    h5 {
+      margin: 0px;
+
+      &:hover {
+        color: burlywood;
+      }
+    }
   `,
   Right: styled.div`
     flex: 10;
@@ -63,6 +71,14 @@ export const ContainerRight = {
     height: 100%;
     padding: 0% 2%;
     border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+    h5 {
+      margin: 0px;
+
+      &:hover {
+        color: burlywood;
+      }
+    }
   `,
   Right: styled.div`
     display: flex;
@@ -70,5 +86,13 @@ export const ContainerRight = {
     justify-content: center;
     height: 100%;
     padding: 0% 2%;
+
+    h5 {
+      margin: 0px;
+
+      &:hover {
+        color: burlywood;
+      }
+    }
   `
 };

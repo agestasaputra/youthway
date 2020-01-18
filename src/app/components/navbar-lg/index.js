@@ -3,6 +3,7 @@ import { Container, NavbarMenu, NavbarMenuRight } from "./styles";
 import { H2 } from "app/components/font";
 import { Heart, ShoppingBag } from "react-feather";
 import YTHWY from "app/assets/logo/YTHWY.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
             <H2>MEN</H2>
           </NavbarMenu.Left>
           <NavbarMenu.Middle>
-            <H2>WOMAN</H2>
+            <H2>WOMEN</H2>
           </NavbarMenu.Middle>
           <NavbarMenu.Right>
             <H2>COLLABS</H2>
@@ -29,7 +30,9 @@ const Navbar = () => {
         </NavbarMenuRight.Left>
         <NavbarMenuRight.Middle>0</NavbarMenuRight.Middle>
         <NavbarMenuRight.Right>
-          <Heart color="black" size="24" />
+          <NavLink to={"/wishlist"}>
+            <Heart color="black" size="24" />
+          </NavLink>
         </NavbarMenuRight.Right>
       </Container.Right>
     </Container.Wrapper>

@@ -59,18 +59,42 @@ export const NavbarMenu = {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    h2 {
+      margin: 0px;
+
+      &:hover {
+        color: darkgoldenrod;
+      }
+    }
   `,
   Middle: styled.div`
     /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content: center;
+
+    h2 {
+      margin: 0px;
+
+      &:hover {
+        color: darkgoldenrod;
+      }
+    }
   `,
   Right: styled.div`
     /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content: center;
+
+    h2 {
+      margin: 0px;
+
+      &:hover {
+        color: darkgoldenrod;
+      }
+    }
   `
 };
 
@@ -98,5 +122,17 @@ export const NavbarMenuRight = {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: unset;
+
+      svg {
+        &:hover {
+          fill: burlywood;
+        }
+      }
+    }
   `
 };

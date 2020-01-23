@@ -3,7 +3,10 @@ import { H1Styles, H2Styles, H3Styles, H4Styles, H5Styles } from "./styles";
 
 const H1 = props => {
   return (
-    <H1Styles className={props.className && props.className}>
+    <H1Styles
+      onClick={props.onClick && props.onClick}
+      className={props.className && props.className}
+    >
       {props.children}
     </H1Styles>
   );

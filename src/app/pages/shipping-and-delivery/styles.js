@@ -10,7 +10,7 @@ export const Box = styled.div`
   margin: 0% auto;
   padding: 4% 0%;
   height: 100%;
-  max-width: 55%;
+  max-width: 35%;
   text-align: justify;
 
   .title {
@@ -19,13 +19,25 @@ export const Box = styled.div`
 
   .desc {
     margin-bottom: 3%;
+    line-height: 25px;
+  }
+
+  .uppercase {
+    margin-top: 5%;
+    margin-bottom: 0%;
     line-height: 35px;
   }
 
   ul {
-    list-style-type: upper-roman;
+    list-style-type: disc;
+    /* margin-top: -3%;
+    margin-bottom: 5%; */
 
     li {
+      .desc {
+        margin-bottom: 0%;
+        line-height: 22px;
+      }
     }
   }
 `;

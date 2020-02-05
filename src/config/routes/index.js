@@ -5,6 +5,7 @@ import NavbarLarge from "app/components/navbar-lg";
 import Footer from "app/components/footer";
 import Landing from "app/pages/landing";
 import Returns from "app/pages/returns";
+import ShippingAndDelivery from "app/pages/shipping-and-delivery";
 // import AuthenticatedRoute from "./AuthenticatedRoute";
 // import UnauthenticatedRoute from "./UnauthenticatedRoute";
 
@@ -21,6 +22,7 @@ const Routes = () => {
           props={childProps}
         /> */}
         {/* <AuthenticatedRoute path="/home" component={Home} props={childProps} /> */}
+        <Route path="/shipping-and-delivery" component={ShippingAndDelivery} />
         <Route path="/returns" component={Returns} />
         <Route path="/" component={Landing} />
       </Switch>

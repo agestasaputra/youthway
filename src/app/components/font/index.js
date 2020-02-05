@@ -1,5 +1,14 @@
 import React from "react";
-import { H1Styles, H2Styles, H3Styles, H4Styles, H5Styles } from "./styles";
+import {
+  H1Styles,
+  H2Styles,
+  H3Styles,
+  H4Styles,
+  H5Styles,
+  P1Styles,
+  P2Styles,
+  P3Styles
+} from "./styles";
 
 const H1 = props => {
   return (
@@ -44,4 +53,37 @@ const H5 = props => {
   );
 };
 
-export { H1, H2, H3, H4, H5 };
+const P1 = props => {
+  return (
+    <P1Styles
+      onClick={props.onClick && props.onClick}
+      className={props.className && props.className}
+    >
+      {props.children}
+    </P1Styles>
+  );
+};
+
+const P2 = props => {
+  return (
+    <P2Styles
+      onClick={props.onClick && props.onClick}
+      className={props.className && props.className}
+    >
+      {props.children}
+    </P2Styles>
+  );
+};
+
+const P3 = props => {
+  return (
+    <P3Styles
+      onClick={props.onClick && props.onClick}
+      className={props.className && props.className}
+    >
+      {props.children}
+    </P3Styles>
+  );
+};
+
+export { H1, H2, H3, H4, H5, P1, P2, P3 };

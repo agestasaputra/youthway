@@ -8,7 +8,8 @@ export const Container = {
     cursor: pointer;
 
     &:hover {
-      border: 1px solid ${color.brand.primaryBlack};
+      /* border: 1px solid ${color.brand.primaryBlack}; */
+      border: 1px solid rgba(0,0,0,0.5);
     }
   `,
   Top: styled.div`

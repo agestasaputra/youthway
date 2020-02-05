@@ -9,7 +9,7 @@ const Tagline = ({ img }) => {
         <img src={img} alt="icon-youthway" />
       </Container.Top>
       <Container.Bottom>
-        <H1>"Live by your style with us"</H1>
+        <H1>"Live your style with us"</H1>
         <hr />
         <H2>- YOUTHWAY -</H2>
       </Container.Bottom>

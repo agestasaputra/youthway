@@ -5,9 +5,11 @@ export const Container = {
   Wrapper: styled.div`
     display: flex;
     flex-flow: column nowrap;
-    /* background: rgba(0, 25, 30, 1); */
     background: black;
     padding: 0% 5% 5% 5%;
+    width: -webkit-fill-available;
+    left: 0px;
+    position: absolute;
   `,
   Top: styled.div`
     text-align: center;

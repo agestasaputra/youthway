@@ -9,6 +9,8 @@ export const Container = {
     padding: 0% 1%;
     background: ${color.brand.primaryWhite};
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    margin-top: 40px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   `,
   Left: styled.div`
     flex: 1;

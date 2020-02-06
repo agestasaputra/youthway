@@ -21,8 +21,12 @@ export const Container = {
     display: flex;
     align-items: center;
 
-    h5 {
-      color: ${color.brand.primaryWhite};
+    a {
+      text-decoration: none;
+
+      h5 {
+        color: ${color.brand.primaryWhite};
+      }
     }
   `,
   Right: styled.div`

@@ -13,7 +13,7 @@ export const Container = {
     }
   `,
   Top: styled.div`
-    height: 30vw;
+    /* height: 30vw; */
     padding: 3% 3% 6% 3%;
 
     img {

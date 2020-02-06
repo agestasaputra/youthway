@@ -29,10 +29,10 @@ const Footer = () => {
             <NavLink to={"/heritage"}>
               <H5>Our Heritage</H5>
             </NavLink>
-            <NavLink to={"/store-location"}>
+            <NavLink to={"/location"}>
               <H5>Store Location</H5>
             </NavLink>
-            <NavLink to={"/career-us"}>
+            <NavLink to={"/career"}>
               <H5>Career Us</H5>
             </NavLink>
             <NavLink to={"/gift"}>

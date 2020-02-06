@@ -7,7 +7,7 @@ export const Container = {
     flex-flow: column nowrap;
     background: black;
     padding: 0% 5% 5% 5%;
-    width: -webkit-fill-available;
+    width: 100%;
     left: 0px;
     position: absolute;
   `,

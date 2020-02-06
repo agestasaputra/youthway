@@ -14,19 +14,19 @@ export const Container = {
   Top: styled.div`
     display: flex;
     flex-flow: row nowrap;
-    height: 50vw;
+    /* height: 50vw; */
   `,
   Bottom: styled.div`
     display: flex;
     flex-flow: row nowrap;
-    height: 50vw;
+    /* height: 50vw; */
   `
 };
 
 export const ContainerTop = {
   Left: styled.div`
     flex: 1;
-    height: 100%;
+    /* height: 100%; */
     border: 1px solid rgba(0, 0, 0, 0.125);
     cursor: pointer;
 
@@ -59,7 +59,7 @@ export const ContainerTop = {
   `,
   Right: styled.div`
     flex: 1;
-    height: 100%;
+    /* height: 100%; */
     border: 1px solid rgba(0, 0, 0, 0.125);
     cursor: pointer;
 
@@ -95,7 +95,7 @@ export const ContainerTop = {
 export const ContainerBottom = {
   Left: styled.div`
     flex: 1;
-    height: 100%;
+    /* height: 100%; */
     border: 1px solid rgba(0, 0, 0, 0.125);
     cursor: pointer;
 
@@ -128,7 +128,7 @@ export const ContainerBottom = {
   `,
   Right: styled.div`
     flex: 1;
-    height: 100%;
+    /* height: 100%; */
     border: 1px solid rgba(0, 0, 0, 0.125);
     cursor: pointer;
 

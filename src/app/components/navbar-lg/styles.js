@@ -22,7 +22,8 @@ export const Container = {
     align-items: center;
 
     img {
-      height: 70%;
+      /* height: 70%; */
+      width: 13%;
     }
   `,
   Middle: styled.div`

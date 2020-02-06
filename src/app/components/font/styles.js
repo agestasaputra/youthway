@@ -116,6 +116,28 @@ export const H5Styles = styled.h5`
   }
 `;
 
+export const H6Styles = styled.h5`
+  font-family: "Overpass", sans-serif;
+  color: ${color.brand.primaryBlack};
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0px;
+  line-height: 15px;
+
+  @media (max-width: ${M_DEVICES_WIDTH}) {
+    font-size: 10px;
+  }
+
+  @media (max-width: ${S_DEVICES_WIDTH}) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${XS_DEVICES_WIDTH}) {
+    font-size: 9px;
+    line-height: 15px;
+  }
+`;
+
 export const P1Styles = styled.p`
   font-family: "Overpass", sans-serif;
   color: ${color.brand.primaryBlack};

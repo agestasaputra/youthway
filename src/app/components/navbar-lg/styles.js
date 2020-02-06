@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import color from "config/guidlines/color";
+import { L_DEVICES_WIDTH } from "config/guidlines/display";
 
 export const Container = {
   Wrapper: styled.div`
@@ -15,6 +16,10 @@ export const Container = {
     width: 100%;
     position: fixed;
     z-index: 1;
+
+    @media (max-width: ${L_DEVICES_WIDTH}) {
+      top: 38px;
+    }
   `,
   Left: styled.div`
     flex: 1;

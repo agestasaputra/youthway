@@ -5,6 +5,7 @@ import {
   H3Styles,
   H4Styles,
   H5Styles,
+  H6Styles,
   P1Styles,
   P2Styles,
   P3Styles
@@ -53,6 +54,14 @@ const H5 = props => {
   );
 };
 
+const H6 = props => {
+  return (
+    <H6Styles className={props.className && props.className}>
+      {props.children}
+    </H6Styles>
+  );
+};
+
 const P1 = props => {
   return (
     <P1Styles
@@ -86,4 +95,4 @@ const P3 = props => {
   );
 };
 
-export { H1, H2, H3, H4, H5, P1, P2, P3 };
+export { H1, H2, H3, H4, H5, H6, P1, P2, P3 };

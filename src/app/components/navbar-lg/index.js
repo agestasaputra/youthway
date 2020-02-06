@@ -4,8 +4,15 @@ import { H2 } from "app/components/font";
 import { Heart, ShoppingBag } from "react-feather";
 import YTHWY from "app/assets/logo/YTHWY.png";
 import { NavLink } from "react-router-dom";
+import Men from "./components/men";
+import Women from "./components/women";
+import Collabs from "./components/collabs";
 
 const Navbar = () => {
+  const [men, setMen] = React.useState(false);
+  const [women, setWomen] = React.useState(false);
+  const [collabs, setCollabs] = React.useState(false);
+
   return (
     <Container.Wrapper>
       <Container.Left>
@@ -13,7 +20,7 @@ const Navbar = () => {
       </Container.Left>
       <Container.Middle>
         <NavbarMenu.Wrapper>
-          <NavbarMenu.Left>
+          <NavbarMenu.Left onMouseOver={() => setMen(true)}>
             <H2>MEN</H2>
           </NavbarMenu.Left>
           <NavbarMenu.Middle>
@@ -35,6 +42,9 @@ const Navbar = () => {
           </NavLink>
         </NavbarMenuRight.Right>
       </Container.Right>
+      {men && <Men setMen={setMen} />}
+      {women && <Women setWomen={setWomen} />}
+      {collabs && <Collabs setCollabs={setCollabs} />}
     </Container.Wrapper>
   );
 };

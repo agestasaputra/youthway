@@ -39,7 +39,7 @@ export const Container = {
 
     h2 {
       margin: 0px;
-      cursor: pointer;
+      cursor: default;
 
       &:hover {
         color: red;

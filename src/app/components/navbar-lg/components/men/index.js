@@ -7,7 +7,7 @@ import DiscUpTo50 from "app/assets/promotion/promo-up-to-50.jpg";
 
 const Men = ({ setMen }) => {
   return (
-    <Container.Wrapper>
+    <Container.Wrapper onMouseLeave={() => setMen(false)}>
       <Container.Left>
         <ContainerLeft.Left>
           <img src={DiscUpTo50} alt="promo-up-to-50" />

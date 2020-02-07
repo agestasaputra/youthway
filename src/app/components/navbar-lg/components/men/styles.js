@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import color from "config/guidlines/color";
-import { L_DEVICES_WIDTH } from "config/guidlines/display";
 
 export const Container = {
   Wrapper: styled.div`
@@ -14,10 +13,6 @@ export const Container = {
     border-top: 1px solid rgba(0, 0, 0, 0.125);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-
-    @media (max-width: ${L_DEVICES_WIDTH}) {
-      top: 114px;
-    }
   `,
   Left: styled.div`
     flex: 1;
@@ -118,7 +113,6 @@ export const ContainerLeft = {
   `,
   Right: styled.div`
     flex: 1;
-    border-right: 1px solid rgba(0, 0, 0, 0.125);
     padding: 0% 8%;
     margin: 8% 0%;
 

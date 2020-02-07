@@ -6,7 +6,7 @@ export const Container = styled.div`
   /* background: ${color.brand.primaryWhite}; */
   background: #f7f7f7;
   position: absolute;
-  top: 40px;
+  top: 30px;
   right: 0%;
   border: 1px solid rgba(0, 0, 0, 0.125);
   box-shadow: 0 3px 49px 0 rgba(0, 0, 0, 0.2);

@@ -1,7 +1,7 @@
 import React from "react";
 import { H1 } from "app/components/font";
 import { Container, ContainerTop, ContainerBottom } from "./styles";
-// import { NavLink } from "react-router-dom";
+import Banner from "./sections/banner";
 
 import Tshirt from "app/assets/product/tshirt.jpg";
 import Lekbong from "app/assets/product/lekbong.jpg";
@@ -11,6 +11,7 @@ import Denim from "app/assets/product/denim.jpg";
 const Products = () => {
   return (
     <Container.Wrapper>
+      <Banner />
       <H1> OUR PRODUCTS </H1>
       <Container.Top>
         <ContainerTop.Left>

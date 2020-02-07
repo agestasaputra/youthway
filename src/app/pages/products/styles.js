@@ -6,10 +6,9 @@ export const Container = {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    padding-top: 3%;
 
     h1 {
-      margin-bottom: 5%;
+      margin: 3% 0% 5% 0%;
       text-align: center;
     }
 
@@ -36,7 +35,6 @@ export const Container = {
 export const ContainerTop = {
   Left: styled.div`
     flex: 1;
-    /* height: 100%; */
     border: 1px solid rgba(0, 0, 0, 0.125);
     cursor: pointer;
 
@@ -105,7 +103,6 @@ export const ContainerTop = {
 export const ContainerBottom = {
   Left: styled.div`
     flex: 1;
-    /* height: 100%; */
     border: 1px solid rgba(0, 0, 0, 0.125);
     cursor: pointer;
 
@@ -138,7 +135,6 @@ export const ContainerBottom = {
   `,
   Right: styled.div`
     flex: 1;
-    /* height: 100%; */
     border: 1px solid rgba(0, 0, 0, 0.125);
     cursor: pointer;
 

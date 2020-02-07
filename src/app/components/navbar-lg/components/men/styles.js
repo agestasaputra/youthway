@@ -5,7 +5,7 @@ import { L_DEVICES_WIDTH } from "config/guidlines/display";
 export const Container = {
   Wrapper: styled.div`
     position: fixed;
-    top: 132px;
+    top: 110px;
     left: 0px;
     background: ${color.brand.primaryWhite};
     width: 100%;

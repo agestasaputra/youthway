@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Box } from "./styles";
 import { H1, P3 } from "app/components/font";
 
-const Faq = () => {
+const Careers = () => {
   return (
     <Container>
       <Box>
-        <H1 className="title">Faq</H1>
+        <H1 className="title">Career Us</H1>
         <P3 className="desc">
           All returns are FREE provided that you use the returns label included
           in the parcel.
@@ -49,4 +49,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default Careers;

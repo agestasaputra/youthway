@@ -1,25 +1,21 @@
 import styled from "styled-components";
 import color from "config/guidlines/color";
-import { L_DEVICES_WIDTH } from "config/guidlines/display";
+// import { L_DEVICES_WIDTH } from "config/guidlines/display";
 
 export const Container = {
   Wrapper: styled.div`
     display: flex;
     flex-flow: row nowrap;
-    height: 10%;
+    height: 80px;
     padding: 0% 1%;
     background: ${color.brand.primaryWhite};
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     left: 0px;
-    top: 40px;
+    top: 30px;
     width: 100%;
     position: fixed;
     z-index: 1;
-
-    @media (max-width: ${L_DEVICES_WIDTH}) {
-      top: 38px;
-    }
   `,
   Left: styled.div`
     flex: 1;
@@ -27,8 +23,9 @@ export const Container = {
     align-items: center;
 
     img {
-      /* height: 70%; */
-      width: 13%;
+      /* width: 13%; */
+      width: 80px;
+      padding: 10px;
     }
   `,
   Middle: styled.div`

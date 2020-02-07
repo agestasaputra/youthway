@@ -10,6 +10,14 @@ body {
   padding: 0px;
   font-family: "Overpass", sans-serif;
   max-width: 1366px;
+  margin-top: 110px;
+}
+
+@media screen and (max-width: 1366px) {
+  body {
+    /* margin-top: 212px; */
+    margin-top: 110px;
+  }
 }
 
 #root {

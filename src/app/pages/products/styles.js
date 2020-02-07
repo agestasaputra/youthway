@@ -5,6 +5,8 @@ export const Container = {
   Wrapper: styled.div`
     display: flex;
     flex-flow: column nowrap;
+    width: 100%;
+    padding-top: 3%;
 
     h1 {
       margin-bottom: 5%;

@@ -1,6 +1,7 @@
 import React from "react";
 import { H1 } from "app/components/font";
 import { Container, ContainerTop, ContainerBottom } from "./styles";
+import { NavLink } from "react-router-dom";
 
 const Catalog = ({ dataCatalog }) => {
   return (
@@ -26,6 +27,7 @@ const Catalog = ({ dataCatalog }) => {
           <H1>{dataCatalog[3].name}</H1>
         </ContainerBottom.Right>
       </Container.Bottom>
+      <NavLink to={`/products`}>SEE MORE PRODUCTS</NavLink>
     </Container.Wrapper>
   );
 };

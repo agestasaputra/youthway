@@ -34,6 +34,9 @@ const Men = ({ setMen }) => {
           <NavLink to="tshirts">
             <H6>Tshirts</H6>
           </NavLink>
+          <NavLink to="shirts">
+            <H6>Shirts/Flannel</H6>
+          </NavLink>
           <NavLink to="sweatshirts">
             <H6>Sweatshirts</H6>
           </NavLink>

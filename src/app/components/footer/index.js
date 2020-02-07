@@ -32,7 +32,7 @@ const Footer = () => {
             <NavLink to={"/location"}>
               <H5>Store Location</H5>
             </NavLink>
-            <NavLink to={"/career"}>
+            <NavLink to={"/careers"}>
               <H5>Career Us</H5>
             </NavLink>
             <NavLink to={"/gift"}>
@@ -48,7 +48,7 @@ const Footer = () => {
             <NavLink to={"/contact-us"}>
               <H5>Contact Us</H5>
             </NavLink>
-            <NavLink to={"/faq"}>
+            <NavLink to={"/s"}>
               <H5>FAQs</H5>
             </NavLink>
             <NavLink to={"/men-size-guide"}>

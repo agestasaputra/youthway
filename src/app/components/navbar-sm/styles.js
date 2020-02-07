@@ -5,11 +5,11 @@ export const Container = {
   Wrapper: styled.div`
     display: flex;
     flex-flow: row nowrap;
-    height: 5%;
+    /* height: 5%; */
+    height: 30px;
     /* width: 100%; */
     width: -webkit-fill-available;
     left: 0px;
-    max-height: 40px;
     background: ${color.brand.primaryBlack};
     color: ${color.brand.primaryWhite};
     position: fixed;

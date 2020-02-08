@@ -16,7 +16,9 @@ const Navbar = () => {
   return (
     <Container.Wrapper>
       <Container.Left>
-        <img src={YTHWY} alt="icon-youthway" />
+        <NavLink to={"/"}>
+          <img src={YTHWY} alt="icon-youthway" />
+        </NavLink>
       </Container.Left>
       <Container.Middle>
         <NavbarMenu.Wrapper>

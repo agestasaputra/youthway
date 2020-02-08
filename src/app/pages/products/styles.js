@@ -6,6 +6,7 @@ export const Container = {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
     h1 {
       margin: 3% 0% 5% 0%;
@@ -20,7 +21,7 @@ export const Container = {
       text-decoration: none;
     }
   `,
-  Top: styled.div`
+  Card: styled.div`
     display: flex;
     flex-flow: row nowrap;
     /* height: 50vw; */
@@ -32,7 +33,7 @@ export const Container = {
   `
 };
 
-export const ContainerTop = {
+export const ContainerCard = {
   Left: styled.div`
     flex: 1;
     border: 1px solid rgba(0, 0, 0, 0.125);
@@ -100,69 +101,69 @@ export const ContainerTop = {
   `
 };
 
-export const ContainerBottom = {
-  Left: styled.div`
-    flex: 1;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    cursor: pointer;
+// export const ContainerBottom = {
+//   Left: styled.div`
+//     flex: 1;
+//     border: 1px solid rgba(0, 0, 0, 0.125);
+//     cursor: pointer;
 
-    img {
-      width: 100%;
-      height: 100%;
-      transition: 0.5s;
-    }
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       transition: 0.5s;
+//     }
 
-    h1 {
-      margin: 0px;
-      text-transform: uppercase;
-      position: relative;
-      top: -55%;
-      color: ${color.brand.primaryWhite};
-      opacity: 0;
-      transition: 0.5s;
-    }
+//     h1 {
+//       margin: 0px;
+//       text-transform: uppercase;
+//       position: relative;
+//       top: -55%;
+//       color: ${color.brand.primaryWhite};
+//       opacity: 0;
+//       transition: 0.5s;
+//     }
 
-    &:hover {
-      img {
-        filter: brightness(40%);
-      }
+//     &:hover {
+//       img {
+//         filter: brightness(40%);
+//       }
 
-      h1 {
-        transition: 0.5s;
-        opacity: 1;
-      }
-    }
-  `,
-  Right: styled.div`
-    flex: 1;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    cursor: pointer;
+//       h1 {
+//         transition: 0.5s;
+//         opacity: 1;
+//       }
+//     }
+//   `,
+//   Right: styled.div`
+//     flex: 1;
+//     border: 1px solid rgba(0, 0, 0, 0.125);
+//     cursor: pointer;
 
-    img {
-      width: 100%;
-      height: 100%;
-      transition: 0.5s;
-    }
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       transition: 0.5s;
+//     }
 
-    h1 {
-      margin: 0px;
-      text-transform: uppercase;
-      position: relative;
-      top: -55%;
-      color: ${color.brand.primaryWhite};
-      opacity: 0;
-      transition: 0.5s;
-    }
+//     h1 {
+//       margin: 0px;
+//       text-transform: uppercase;
+//       position: relative;
+//       top: -55%;
+//       color: ${color.brand.primaryWhite};
+//       opacity: 0;
+//       transition: 0.5s;
+//     }
 
-    &:hover {
-      img {
-        filter: brightness(40%);
-      }
+//     &:hover {
+//       img {
+//         filter: brightness(40%);
+//       }
 
-      h1 {
-        transition: 0.5s;
-        opacity: 1;
-      }
-    }
-  `
-};
+//       h1 {
+//         transition: 0.5s;
+//         opacity: 1;
+//       }
+//     }
+//   `
+// };

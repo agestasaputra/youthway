@@ -13,6 +13,7 @@ import MenSizeGuide from "app/pages/men-size-guide";
 import WomenSizeGuide from "app/pages/women-size-guide";
 import ShippingAndDelivery from "app/pages/shipping-and-delivery";
 import Products from "app/pages/products";
+import ProductList from "app/pages/product-list";
 // import AuthenticatedRoute from "./AuthenticatedRoute";
 // import UnauthenticatedRoute from "./UnauthenticatedRoute";
 
@@ -29,6 +30,12 @@ const Routes = () => {
           props={childProps}
         /> */}
         {/* <AuthenticatedRoute path="/home" component={Home} props={childProps} /> */}
+        <Route path="/products/longpants" component={ProductList} />
+        <Route path="/products/shortpants" component={ProductList} />
+        <Route path="/products/jackets" component={ProductList} />
+        <Route path="/products/sweatshirts" component={ProductList} />
+        <Route path="/products/shirts" component={ProductList} />
+        <Route path="/products/tshirts" component={ProductList} />
         <Route path="/products" component={Products} />
         <Route path="/women-size-guide" component={WomenSizeGuide} />
         <Route path="/men-size-guide" component={MenSizeGuide} />

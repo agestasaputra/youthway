@@ -3,9 +3,11 @@ import color from "config/guidlines/color";
 
 export const Container = {
   Wrapper: styled.div`
-    display: flex;
-    flex-flow: column nowrap;
+    /* display: flex;
+    flex-flow: column nowrap; */
+    display: inline-block;
     cursor: pointer;
+    width: ${props => (props.width ? props.width : "unset")};
 
     &:hover {
       /* border: 1px solid ${color.brand.primaryBlack}; */
@@ -117,5 +119,9 @@ export const ContainerBottomRight = {
   `,
   Bottom: styled.div`
     text-align: right;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   `
 };

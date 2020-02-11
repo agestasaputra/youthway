@@ -2,7 +2,7 @@ import React from "react";
 import { Container, NavbarTop, NavbarMenu, NavbarMenuRight } from "./styles2";
 import { H2 } from "app/components/font";
 import { Heart, ShoppingBag } from "react-feather";
-import YTHWY from "app/assets/logo/YTHWY.png";
+import YouthwayLogo from "app/assets/logo/youthway-logo.png";
 import { NavLink } from "react-router-dom";
 import SubmenuMen from "./components/submenu-men";
 import SubmenuWomen from "./components/submenu-women";
@@ -35,7 +35,7 @@ const Navbar = () => {
       <Container.Top>
         <NavbarTop.Left>
           <NavLink to={"/"}>
-            <img src={YTHWY} alt="icon-youthway" />
+            <img src={YouthwayLogo} alt="icon-youthway" />
           </NavLink>
         </NavbarTop.Left>
         <NavbarTop.Middle>

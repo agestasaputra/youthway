@@ -4,8 +4,6 @@ import { Container } from "./styles";
 import { P3 } from "app/components/font";
 
 const Sort = ({ items, sortBy }) => {
-  console.log("cek items:", items);
-  console.log("cek sortBy:", sortBy);
   return (
     <Container className="sort">
       <P3>{items ? `${items} items` : `0 items`} |&nbsp;</P3>

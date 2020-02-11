@@ -3,14 +3,14 @@ import { Content, Body, Middle } from "./styles";
 import { H5 } from "app/components/font";
 import { NavLink } from "react-router-dom";
 import Modal from "app/components/modal";
-import YTHWY from "app/assets/logo/YTHWY.png";
+import YouthwayLogo from "app/assets/logo/youthway-logo.png";
 
 const Login = ({ setLogin }) => {
   return (
     <Modal title="SIGN IN TO YOUR ACCOUNT" show={setLogin}>
       <Content.Wrapper>
         <Content.Header>
-          <img src={YTHWY} alt="icon-youthway" />
+          <img src={YouthwayLogo} alt="icon-youthway" />
         </Content.Header>
         <Content.Body>
           <Body.Top>

@@ -7,7 +7,7 @@ import {
   Help,
   SocialMedia
 } from "./styles";
-import YTHWY from "app/assets/logo/YTHWY.png";
+import YouthwayLogo from "app/assets/logo/youthway-logo.png";
 import { NavLink } from "react-router-dom";
 import { H4, H5 } from "app/components/font";
 // import fb from "app/assets/logo/fb.png";
@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <Container.Wrapper>
       <Container.Top>
-        <img src={YTHWY} alt="logo-youthway" />
+        <img src={YouthwayLogo} alt="logo-youthway" />
       </Container.Top>
       <Container.Bottom>
         <ContainerBottom.Youthway>

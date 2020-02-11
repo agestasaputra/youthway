@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import {
   Container,
   ContainerBottom,
@@ -12,7 +11,7 @@ import { H5 } from "app/components/font";
 
 const CardNewArrival = props => {
   return (
-    <Container.Wrapper>
+    <Container.Wrapper width={props.width}>
       <Container.Top>
         <img src={props.img} alt={props.title} />
       </Container.Top>
@@ -58,13 +57,6 @@ const CardNewArrival = props => {
       </Container.Bottom>
     </Container.Wrapper>
   );
-};
-
-CardNewArrival.propTypes = {
-  title: PropTypes.string,
-  gender: PropTypes.array,
-  color: PropTypes.array,
-  price: PropTypes.number
 };
 
 export default CardNewArrival;

@@ -17,7 +17,7 @@ import ProductList from "app/pages/product-list";
 // import AuthenticatedRoute from "./AuthenticatedRoute";
 // import UnauthenticatedRoute from "./UnauthenticatedRoute";
 
-const Routes = () => {
+const Routes = ({ state, dispatch }) => {
   return (
     <React.Suspense fallback={null}>
       <NavbarSmall />
@@ -30,22 +30,72 @@ const Routes = () => {
           props={childProps}
         /> */}
         {/* <AuthenticatedRoute path="/home" component={Home} props={childProps} /> */}
-        <Route path="/products/longpants" component={ProductList} />
-        <Route path="/products/shortpants" component={ProductList} />
-        <Route path="/products/jackets" component={ProductList} />
-        <Route path="/products/sweatshirts" component={ProductList} />
-        <Route path="/products/shirts" component={ProductList} />
-        <Route path="/products/tshirts" component={ProductList} />
-        <Route path="/products" component={Products} />
-        <Route path="/women-size-guide" component={WomenSizeGuide} />
-        <Route path="/men-size-guide" component={MenSizeGuide} />
-        <Route path="/faqs" component={Faqs} />
-        <Route path="/careers" component={Careers} />
-        <Route path="/location" component={Location} />
-        <Route path="/heritage" component={Heritage} />
-        <Route path="/shipping-and-delivery" component={ShippingAndDelivery} />
-        <Route path="/returns" component={Returns} />
-        <Route path="/" component={Landing} />
+        <Route
+          path="/products/longpants"
+          component={() => <ProductList state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/products/shortpants"
+          component={() => <ProductList state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/products/jackets"
+          component={() => <ProductList state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/products/sweatshirts"
+          component={() => <ProductList state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/products/shirts"
+          component={() => <ProductList state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/products/tshirts"
+          component={() => <ProductList state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/products"
+          component={() => <Products state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/women-size-guide"
+          component={() => <WomenSizeGuide state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/men-size-guide"
+          component={() => <MenSizeGuide state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/faqs"
+          component={() => <Faqs state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/careers"
+          component={() => <Careers state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/location"
+          component={() => <Location state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/heritage"
+          component={() => <Heritage state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/shipping-and-delivery"
+          component={() => (
+            <ShippingAndDelivery state={state} dispatch={dispatch} />
+          )}
+        />
+        <Route
+          path="/returns"
+          component={() => <Returns state={state} dispatch={dispatch} />}
+        />
+        <Route
+          path="/"
+          component={() => <Landing state={state} dispatch={dispatch} />}
+        />
       </Switch>
       <Footer />
     </React.Suspense>

@@ -2,33 +2,13 @@ import React from "react";
 import { Container, Filter } from "./styles";
 import Filters from "./sections/filters";
 import Contents from "./sections/contents";
-import Pagination from "app/components/pagination";
+import Breadcrumb from "app/components/breadcrumb";
 import Sort from "app/components/sort";
 import { Plus, Minus } from "react-feather";
 import { P3 } from "app/components/font";
 
-const ProductList = props => {
-  const sortBy = [
-    {
-      id: 1,
-      name: "Newest"
-    },
-    {
-      id: 2,
-      name: "Lowest Price"
-    },
-    {
-      id: 3,
-      name: "Highest Price"
-    },
-    {
-      id: 4,
-      name: "Best Seller"
-    }
-  ];
-
+const ProductList = ({ state, dispatch }) => {
   const [filter, setFilter] = React.useState(true);
-
   return (
     <Container.Wrapper>
       <Container.Top>
@@ -40,8 +20,8 @@ const ProductList = props => {
           )}
           &nbsp;<P3 onClick={() => setFilter(!filter)}>Filter</P3>
         </Filter>
-        <Pagination path="/products/tshirts" />
-        <Sort items={15} sortBy={sortBy} />
+        <Breadcrumb path="/products/tshirts" />
+        <Sort items={15} sortBy={state.dataProductListPage.dataSortBy} />
       </Container.Top>
       <Container.Bottom>
         {filter && <Filters />}

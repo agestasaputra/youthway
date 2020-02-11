@@ -4,7 +4,6 @@ import { H3 } from "app/components/font";
 import { X } from "react-feather";
 
 const Modal = props => {
-  console.log("cek props:", props);
   return (
     <Container.Wrapper>
       <Container.Header>

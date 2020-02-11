@@ -5,9 +5,13 @@ import { NavLink } from "react-router-dom";
 import CatalogWinter from "app/assets/catalog/winter-men.jpg";
 import DiscUpTo50 from "app/assets/promotion/promo-up-to-50.jpg";
 
-const Men = ({ setMen }) => {
+const SubmenuMen = ({ refSubmenuMen, mouseOverHandler, mouseOutHandler }) => {
   return (
-    <Container.Wrapper onMouseLeave={() => setMen(false)}>
+    <Container.Wrapper
+      ref={refSubmenuMen}
+      onMouseOver={() => mouseOverHandler("men")}
+      onMouseOut={() => mouseOutHandler("men")}
+    >
       <Container.Left>
         <ContainerLeft.Left>
           <img src={DiscUpTo50} alt="promo-up-to-50" />
@@ -31,7 +35,7 @@ const Men = ({ setMen }) => {
       <Container.Middle>
         <ContainerMiddle.Left>
           <H4>Clothes</H4>
-          <NavLink to="tshirts">
+          <NavLink to="/products/tshirts">
             <H6>Tshirts</H6>
           </NavLink>
           <NavLink to="shirts">
@@ -72,4 +76,4 @@ const Men = ({ setMen }) => {
   );
 };
 
-export default Men;
+export default SubmenuMen;

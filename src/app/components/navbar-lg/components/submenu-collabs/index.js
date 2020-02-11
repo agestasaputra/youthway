@@ -3,9 +3,17 @@ import { Container } from "./styles";
 // import { H5 } from "app/components/font";
 // import { NavLink } from "react-router-dom";
 
-const Collabs = () => {
+const SubmenuCollabs = ({
+  refSubmenuCollabs,
+  mouseOverHandler,
+  mouseOutHandler
+}) => {
   return (
-    <Container.Wrapper>
+    <Container.Wrapper
+      ref={refSubmenuCollabs}
+      onMouseOver={() => mouseOverHandler("collabs")}
+      onMouseOut={() => mouseOutHandler("collabs")}
+    >
       <Container.Left>Collabs - Left</Container.Left>
       <Container.Middle>Collabs - Middle</Container.Middle>
       <Container.Right>Collabs - Right</Container.Right>
@@ -13,4 +21,4 @@ const Collabs = () => {
   );
 };
 
-export default Collabs;
+export default SubmenuCollabs;

@@ -6,6 +6,7 @@ import Catalog from "./sections/catalog";
 import Tagline from "./sections/tagline";
 
 const Landing = ({ state, dispatch }) => {
+  console.log(process.env.REACT_APP_WORDING_PATH);
   return (
     <Container>
       <Banner

@@ -25,7 +25,7 @@ const ProductList = ({ state, dispatch }) => {
       </Container.Top>
       <Container.Bottom>
         {filter && <Filters />}
-        <Contents />
+        <Contents state={state} dispatch={dispatch} />
       </Container.Bottom>
     </Container.Wrapper>
   );

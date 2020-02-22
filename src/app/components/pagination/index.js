@@ -10,23 +10,28 @@ const Pagination = ({
   onNumberPage
 }) => {
   const [pages, setPages] = React.useState([]);
+  const [newPages, setNewPages] = React.useState([]);
   const [startPage, setStartPage] = React.useState(0);
   const [minStartPage] = React.useState(0);
   const [maxStartPage, setMaxStartPage] = React.useState(0);
 
   React.useEffect(() => {
-    console.log("cek pages:", pages);
     const validation = () => {
       if (pages[pages.length - 1] !== 5) {
         let loopMax = 5 - pages[pages.length - 1].length;
-        for (let i = 0; i < loopMax; i++) {
-          let num = pages[pages.length - 2].length - 1 - i;
-          pages[pages.length - 1].unshift(pages[pages.length - 2][num]);
-        }
+        let tmp = [...pages[pages.length - 2]];
+        tmp.reverse();
+        tmp.length = loopMax;
+        let newPages = [...pages];
+        newPages[newPages.length - 1] = [
+          ...tmp,
+          ...newPages[newPages.length - 1]
+        ];
+        newPages[newPages.length - 1].sort((a, b) => a.key - b.key);
+        setNewPages(newPages);
       }
       return;
     };
-
     pages && pages.length > 0 && setMaxStartPage(pages.length - 1);
     pages && pages.length > 0 && validation();
   }, [pages]);
@@ -69,7 +74,7 @@ const Pagination = ({
       <Button className="btn-page" funcPage={onPrevHandler}>
         {`<`}
       </Button>
-      {pages && pages.length > 0 && pages[startPage].map(item => item)}
+      {newPages && newPages.length > 0 && newPages[startPage].map(item => item)}
       <Button className="btn-page" funcPage={onNextHandler}>
         {`>`}
       </Button>

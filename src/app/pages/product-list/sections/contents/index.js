@@ -4,6 +4,9 @@ import CardNewArrival from "app/components/card/new-arrival";
 import Pagination from "app/components/pagination";
 
 const Contents = ({ state, dispatch }) => {
+  // React.useEffect(() => {
+  //   console.log("content works!");
+  // }, []);
   const onPrevPageHandler = () => {
     console.log("onPrevPageHandler worked!");
     return;
@@ -36,7 +39,7 @@ const Contents = ({ state, dispatch }) => {
           );
         })}
       <Pagination
-        totalPages={22}
+        totalPages={28}
         activePage={state.dataProductListPage.dataContent.activePage}
         onPrevPage={onPrevPageHandler}
         onNextPage={onNextPageHandler}

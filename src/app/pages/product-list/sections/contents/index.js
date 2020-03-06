@@ -3,10 +3,7 @@ import { Container } from "./styles";
 import CardNewArrival from "app/components/card/new-arrival";
 import Pagination from "app/components/pagination";
 
-const Contents = ({ state, dispatch }) => {
-  // React.useEffect(() => {
-  //   console.log("content works!");
-  // }, []);
+const Contents = ({ state, dispatch, location }) => {
   const onPrevPageHandler = () => {
     console.log("onPrevPageHandler worked!");
     return;
@@ -31,10 +28,13 @@ const Contents = ({ state, dispatch }) => {
               width={"25%"}
               key={index}
               img={item.img}
-              title={item.title}
+              name={item.name}
+              codeName={item.codeName}
+              type={item.type}
               gender={item.gender}
               color={item.color}
               price={item.price}
+              location={location}
             />
           );
         })}

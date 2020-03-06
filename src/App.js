@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Routes from "config/routes";
-import "font-awesome/css/font-awesome.min.css";
 import { Context, Provider } from "./context";
 
 function MainContent() {

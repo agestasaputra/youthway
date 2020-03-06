@@ -4,7 +4,8 @@ import { H1 } from "app/components/font";
 import Slider from "react-slick";
 import CardNewArrival from "app/components/card/new-arrival";
 
-const NewArrival = ({ dataNewArrival }) => {
+const NewArrival = ({ dataNewArrival, location }) => {
+  console.log("cek dataNewArrival:", dataNewArrival);
   const settings = {
     dots: false,
     infinite: false,
@@ -15,8 +16,24 @@ const NewArrival = ({ dataNewArrival }) => {
   return (
     <Container>
       <H1>NEW ARRIVALS</H1>
-      <Slider {...settings}>
-        <CardNewArrival
+      {dataNewArrival && dataNewArrival.length > 0 && (
+        <Slider {...settings}>
+          {dataNewArrival.map((item, index) => (
+            <CardNewArrival
+              key={index}
+              img={item.img}
+              name={item.name}
+              codeName={item.codeName}
+              type={item.type}
+              gender={item.gender}
+              color={item.color}
+              price={item.price}
+              location={location}
+            />
+          ))}
+        </Slider>
+      )}
+      {/* <CardNewArrival
           img={dataNewArrival[0].img}
           title={dataNewArrival[0].name}
           gender={dataNewArrival[0].gender}
@@ -43,8 +60,7 @@ const NewArrival = ({ dataNewArrival }) => {
           gender={dataNewArrival[3].gender}
           color={dataNewArrival[3].color}
           price={dataNewArrival[3].price}
-        />
-      </Slider>
+        /> */}
     </Container>
   );
 };

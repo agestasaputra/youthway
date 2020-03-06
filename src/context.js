@@ -16,8 +16,9 @@ const initialState = {
     dataNewArrival: [
       {
         id: 0,
-        name: "Tshirt",
-        codeName: "tshirt",
+        name: "Tshirt Catalog",
+        type: "tshirt",
+        codeName: "YTTS220220",
         gender: ["men", "women"],
         color: ["black", "white", "red"],
         price: 95000,
@@ -25,8 +26,9 @@ const initialState = {
       },
       {
         id: 1,
-        name: "Lekbong",
-        codeName: "lekbong",
+        name: "Lekbong Catalog",
+        type: "lekbong",
+        codeName: "YTLB220220",
         gender: ["men", "women"],
         color: ["blue", "red", "white"],
         price: 85000,
@@ -34,8 +36,9 @@ const initialState = {
       },
       {
         id: 2,
-        name: "Denim",
-        codeName: "denim",
+        name: "Denim Catalog",
+        type: "long-pants",
+        codeName: "YTLP220220",
         gender: ["men", "women"],
         color: ["white", "blue", "red"],
         price: 200000,
@@ -43,8 +46,9 @@ const initialState = {
       },
       {
         id: 3,
-        name: "Short Pants",
-        codeName: "short-pants",
+        name: "Short Pants Catalog",
+        type: "short-pants",
+        codeName: "YTSP220220",
         gender: ["men", "women"],
         color: ["red", "black", "white"],
         price: 85000,
@@ -54,25 +58,25 @@ const initialState = {
     dataCatalog: [
       {
         id: 0,
-        name: "Tshirt",
+        name: "Tshirt Catalog",
         codeName: "tshirt",
         img: Tshirt
       },
       {
         id: 1,
-        name: "Lekbong",
+        name: "Lekbong Catalog",
         codeName: "lekbong",
         img: Lekbong
       },
       {
         id: 2,
-        name: "Denim",
+        name: "Denim Catalog",
         codeName: "denim",
         img: Denim
       },
       {
         id: 3,
-        name: "Short Pants",
+        name: "Short Pants Catalog",
         codeName: "short-pants",
         img: ShortPants
       }
@@ -83,8 +87,9 @@ const initialState = {
       data: [
         {
           id: 0,
-          name: "Tshirt",
-          codeName: "tshirt",
+          name: "Tshirt Catalog",
+          type: "tshirt",
+          codeName: "YTTS220220",
           gender: ["men", "women"],
           color: ["black", "white", "red"],
           price: 95000,
@@ -92,8 +97,9 @@ const initialState = {
         },
         {
           id: 1,
-          name: "Lekbong",
-          codeName: "lekbong",
+          name: "Lekbong Catalog",
+          type: "lekbong",
+          codeName: "YTLB220220",
           gender: ["men", "women"],
           color: ["blue", "red", "white"],
           price: 85000,
@@ -101,8 +107,9 @@ const initialState = {
         },
         {
           id: 2,
-          name: "Denim",
-          codeName: "denim",
+          name: "Denim Catalog",
+          type: "long-pants",
+          codeName: "YTLP220220",
           gender: ["men", "women"],
           color: ["white", "blue", "red"],
           price: 200000,
@@ -110,8 +117,9 @@ const initialState = {
         },
         {
           id: 3,
-          name: "Short Pants",
-          codeName: "short-pants",
+          name: "Short Pants Catalog",
+          type: "short-pants",
+          codeName: "YTSP220220",
           gender: ["men", "women"],
           color: ["red", "black", "white"],
           price: 85000,
@@ -119,8 +127,9 @@ const initialState = {
         },
         {
           id: 4,
-          name: "Short Pants",
-          codeName: "short-pants",
+          name: "Short Pants Catalog",
+          type: "short-pants",
+          codeName: "YTSP220220",
           gender: ["men", "women"],
           color: ["red", "black", "white"],
           price: 85000,
@@ -128,8 +137,9 @@ const initialState = {
         },
         {
           id: 5,
-          name: "Denim",
-          codeName: "denim",
+          name: "Denim Catalog",
+          type: "long-pants",
+          codeName: "YTLP220220",
           gender: ["men", "women"],
           color: ["white", "blue", "red"],
           price: 200000,
@@ -137,8 +147,9 @@ const initialState = {
         },
         {
           id: 6,
-          name: "Lekbong",
-          codeName: "lekbong",
+          name: "Lekbong Catalog",
+          type: "lekbong",
+          codeName: "YTLB220220",
           gender: ["men", "women"],
           color: ["blue", "red", "white"],
           price: 85000,
@@ -146,8 +157,9 @@ const initialState = {
         },
         {
           id: 7,
-          name: "Tshirt",
-          codeName: "tshirt",
+          name: "Tshirt Catalog",
+          type: "tshirt",
+          codeName: "YTTS220220",
           gender: ["men", "women"],
           color: ["black", "white", "red"],
           price: 95000,
@@ -156,7 +168,8 @@ const initialState = {
         {
           id: 8,
           name: "Tshirt",
-          codeName: "tshirt",
+          type: "tshirt",
+          codeName: "YTTS220220",
           gender: ["men", "women"],
           color: ["black", "white", "red"],
           price: 95000,
@@ -164,8 +177,9 @@ const initialState = {
         },
         {
           id: 9,
-          name: "Lekbong",
-          codeName: "lekbong",
+          name: "Lekbong Catalog",
+          type: "lekbong",
+          codeName: "YTLB220220",
           gender: ["men", "women"],
           color: ["blue", "red", "white"],
           price: 85000,
@@ -173,8 +187,9 @@ const initialState = {
         },
         {
           id: 10,
-          name: "Denim",
-          codeName: "denim",
+          name: "Denim Catalog",
+          type: "long-pants",
+          codeName: "YTLP220220",
           gender: ["men", "women"],
           color: ["white", "blue", "red"],
           price: 200000,
@@ -182,8 +197,9 @@ const initialState = {
         },
         {
           id: 11,
-          name: "Short Pants",
-          codeName: "short-pants",
+          name: "Short Pants Catalog",
+          type: "short-pants",
+          codeName: "YTSP220220",
           gender: ["men", "women"],
           color: ["red", "black", "white"],
           price: 85000,
@@ -191,8 +207,9 @@ const initialState = {
         },
         {
           id: 12,
-          name: "Short Pants",
-          codeName: "short-pants",
+          name: "Short Pants Catalog",
+          type: "short-pants",
+          codeName: "YTSP220220",
           gender: ["men", "women"],
           color: ["red", "black", "white"],
           price: 85000,
@@ -200,8 +217,9 @@ const initialState = {
         },
         {
           id: 13,
-          name: "Denim",
-          codeName: "denim",
+          name: "Denim Catalog",
+          type: "long-pants",
+          codeName: "YTLP220220",
           gender: ["men", "women"],
           color: ["white", "blue", "red"],
           price: 200000,
@@ -209,8 +227,9 @@ const initialState = {
         },
         {
           id: 14,
-          name: "Lekbong",
-          codeName: "lekbong",
+          name: "Lekbong Catalog",
+          type: "lekbong",
+          codeName: "YTLB220220",
           gender: ["men", "women"],
           color: ["blue", "red", "white"],
           price: 85000,
@@ -218,8 +237,9 @@ const initialState = {
         },
         {
           id: 15,
-          name: "Tshirt",
-          codeName: "tshirt",
+          name: "Tshirt Catalog",
+          type: "tshirt",
+          codeName: "YTTS220220",
           gender: ["men", "women"],
           color: ["black", "white", "red"],
           price: 95000,

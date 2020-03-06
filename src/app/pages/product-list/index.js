@@ -7,7 +7,7 @@ import Sort from "app/components/sort";
 import { Plus, Minus } from "react-feather";
 import { P3 } from "app/components/font";
 
-const ProductList = ({ state, dispatch }) => {
+const ProductList = ({ state, dispatch, location }) => {
   const [filter, setFilter] = React.useState(true);
   return (
     <Container.Wrapper>
@@ -25,7 +25,7 @@ const ProductList = ({ state, dispatch }) => {
       </Container.Top>
       <Container.Bottom>
         {filter && <Filters />}
-        <Contents state={state} dispatch={dispatch} />
+        <Contents state={state} dispatch={dispatch} location={location} />
       </Container.Bottom>
     </Container.Wrapper>
   );

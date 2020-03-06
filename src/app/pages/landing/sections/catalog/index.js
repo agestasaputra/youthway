@@ -9,13 +9,13 @@ const Catalog = ({ dataCatalog }) => {
       {/* <H1> OUR PRODUCTS </H1> */}
       <Container.Top>
         <ContainerTop.Left>
-          <NavLink to={"/products/tshirts"}>
+          <NavLink to={"/products/tshirt"}>
             <img src={dataCatalog[0].img} alt={dataCatalog[0].name} />
           </NavLink>
           <H1>{dataCatalog[0].name}</H1>
         </ContainerTop.Left>
         <ContainerTop.Right>
-          <NavLink to={"/products/shirts"}>
+          <NavLink to={"/products/shirt"}>
             <img src={dataCatalog[1].img} alt={dataCatalog[1].name} />
           </NavLink>
           <H1>{dataCatalog[1].name}</H1>

@@ -35,31 +35,31 @@ const SubmenuMen = ({ refSubmenuMen, mouseOverHandler, mouseOutHandler }) => {
       <Container.Middle>
         <ContainerMiddle.Left>
           <H4>Clothes</H4>
-          <NavLink to="/products/tshirts">
+          <NavLink to="/products/tshirt">
             <H6>Tshirts</H6>
           </NavLink>
-          <NavLink to="shirts">
+          <NavLink to="/products/shirt">
             <H6>Shirts/Flannel</H6>
           </NavLink>
-          <NavLink to="sweatshirts">
+          <NavLink to="/products/sweatshirt">
             <H6>Sweatshirts</H6>
           </NavLink>
-          <NavLink to="jackets">
+          <NavLink to="/products/jacket">
             <H6>Jackets</H6>
           </NavLink>
         </ContainerMiddle.Left>
         <ContainerMiddle.Right>
           <H4>Pants</H4>
-          <NavLink to="short">
+          <NavLink to="/products/short">
             <H6>Short Pants</H6>
           </NavLink>
-          <NavLink to="denims">
+          <NavLink to="/products/denim">
             <H6>Denims</H6>
           </NavLink>
-          <NavLink to="chinos">
+          <NavLink to="/products/chino">
             <H6>Chinos</H6>
           </NavLink>
-          <NavLink to="jogger">
+          <NavLink to="/products/jogger">
             <H6>Joggerpants</H6>
           </NavLink>
         </ContainerMiddle.Right>

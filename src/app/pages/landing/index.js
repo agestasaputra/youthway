@@ -5,8 +5,7 @@ import NewArrival from "./sections/new-arrival";
 import Catalog from "./sections/catalog";
 import Tagline from "./sections/tagline";
 
-const Landing = ({ state, dispatch }) => {
-  console.log(process.env.REACT_APP_WORDING_PATH);
+const Landing = ({ state, dispatch, location }) => {
   return (
     <Container>
       <Banner
@@ -14,7 +13,10 @@ const Landing = ({ state, dispatch }) => {
           state.dataLandingPage.dataBanner && state.dataLandingPage.dataBanner
         }
       />
-      <NewArrival dataNewArrival={state.dataLandingPage.dataNewArrival} />
+      <NewArrival
+        dataNewArrival={state.dataLandingPage.dataNewArrival}
+        location={location}
+      />
       <Tagline img={state.dataLandingPage.dataTagline} />
       <Catalog dataCatalog={state.dataLandingPage.dataCatalog} />
     </Container>

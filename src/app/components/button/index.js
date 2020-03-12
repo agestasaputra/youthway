@@ -1,16 +1,25 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container, Wrapper } from "./styles";
 
 const Button = props => {
-  console.log("cek props:", props);
   return (
-    <Container
+    <Wrapper
       width={props.width && props.width}
       className={props.className && props.className}
-      onClick={() => props.funcPage && props.funcPage(props.children)}
     >
-      {props.children}
-    </Container>
+      <Container
+        // width={props.width && props.width}
+        className={props.className && props.className}
+        // onClick={() => props.funcPage && props.funcPage(props.children)}
+        onClick={
+          props.className === "btn-page"
+            ? () => props.funcPage && props.funcPage(props.children)
+            : props.onClick && props.onClick
+        }
+      >
+        {props.children}
+      </Container>
+    </Wrapper>
   );
 };
 

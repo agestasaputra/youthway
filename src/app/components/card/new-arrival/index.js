@@ -11,12 +11,13 @@ import { H5 } from "app/components/font";
 import { NavLink } from "react-router-dom";
 
 const CardNewArrival = props => {
-  console.log("cek props:", props);
   return (
     <NavLink
-      to={props.location ? `/products/${props.type}/${props.name}` : null}
+      to={
+        props.location ? `/products/${props.type}/${props.productCode}` : null
+      }
     >
-      {/* <NavLink to={`${props.location.pathname }/${props.name}`}> */}
+      {/* <NavLink to={`${props.location.pathname }/${props.productCode}`}> */}
       <Container.Wrapper width={props.width}>
         <Container.Top>
           <img src={props.img} alt={props.title} />
@@ -27,7 +28,7 @@ const CardNewArrival = props => {
               <H5>Men</H5>&nbsp;<H5>Women</H5>
             </ContainerBottomLeft.Top>
             <ContainerBottomLeft.Bottom>
-              {/* <H5>{props.name}</H5> */}
+              {/* <H5>{props.productCode}</H5> */}
             </ContainerBottomLeft.Bottom>
           </ContainerBottom.Left>
           <ContainerBottom.Middle>

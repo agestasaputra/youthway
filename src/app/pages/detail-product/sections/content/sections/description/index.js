@@ -5,7 +5,25 @@ import { Circle, Heart } from "react-feather";
 import Size from "app/components/size";
 import Button from "app/components/button";
 
-const Preview = () => {
+const Description = ({ state, dispatch }) => {
+  // console.log("cek state:", state);
+
+  const addToCartHandler = () => {
+    dispatch({
+      type: "data-navbar-large",
+      data: {
+        dataCartCounter: state.dataNavbarLarge.dataCartCounter + 1
+      }
+    });
+    dispatch({
+      type: "data-detail-product",
+      data: {
+        buttonAddToCart: true
+      }
+    });
+    return;
+  };
+
   return (
     <Container>
       <Desc.Wrapper>
@@ -48,7 +66,15 @@ const Preview = () => {
           <Size size="XXXL" />
         </Desc.Size>
         <Desc.Button>
-          <Button className="btn-add-to-cart" width={`85%`}>
+          <Button
+            className={`${
+              state.dataDetailProduct.buttonAddToCart
+                ? `btn-add-to-cart disabled`
+                : `btn-add-to-cart`
+            }`}
+            width={`85%`}
+            onClick={addToCartHandler}
+          >
             ADD TO CART
           </Button>
           <Button className="btn-wishlist outline" width={`12%`}>
@@ -60,4 +86,4 @@ const Preview = () => {
   );
 };
 
-export default Preview;
+export default Description;

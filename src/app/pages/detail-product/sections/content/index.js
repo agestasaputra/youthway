@@ -5,12 +5,12 @@ import Description from "./sections/description";
 import Delivery from "./sections/delivery";
 import Share from "./sections/share";
 
-const Content = () => {
+const Content = ({ state, dispatch }) => {
   return (
     <React.Fragment>
       <Container.Content>
         <Preview />
-        <Description />
+        <Description state={state} dispatch={dispatch} />
       </Container.Content>
       <Container.Description>
         <Delivery />

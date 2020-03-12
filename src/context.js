@@ -10,6 +10,9 @@ import YouthwayLogo from "app/assets/logo/youthway-logo.png";
 const Context = React.createContext();
 
 const initialState = {
+  dataNavbarLarge: {
+    dataCartCounter: 0
+  },
   dataLandingPage: {
     dataBanner: LandingBanner,
     dataTagline: YouthwayLogo,
@@ -18,7 +21,7 @@ const initialState = {
         id: 0,
         name: "Tshirt Catalog",
         type: "tshirt",
-        codeName: "YTTS220220",
+        productCode: "YTTS220220",
         gender: ["men", "women"],
         color: ["black", "white", "red"],
         price: 95000,
@@ -28,7 +31,7 @@ const initialState = {
         id: 1,
         name: "Lekbong Catalog",
         type: "lekbong",
-        codeName: "YTLB220220",
+        productCode: "YTLB220220",
         gender: ["men", "women"],
         color: ["blue", "red", "white"],
         price: 85000,
@@ -38,7 +41,7 @@ const initialState = {
         id: 2,
         name: "Denim Catalog",
         type: "long-pants",
-        codeName: "YTLP220220",
+        productCode: "YTLP220220",
         gender: ["men", "women"],
         color: ["white", "blue", "red"],
         price: 200000,
@@ -48,7 +51,7 @@ const initialState = {
         id: 3,
         name: "Short Pants Catalog",
         type: "short-pants",
-        codeName: "YTSP220220",
+        productCode: "YTSP220220",
         gender: ["men", "women"],
         color: ["red", "black", "white"],
         price: 85000,
@@ -59,25 +62,25 @@ const initialState = {
       {
         id: 0,
         name: "Tshirt Catalog",
-        codeName: "tshirt",
+        productCode: "tshirt",
         img: Tshirt
       },
       {
         id: 1,
         name: "Lekbong Catalog",
-        codeName: "lekbong",
+        productCode: "lekbong",
         img: Lekbong
       },
       {
         id: 2,
         name: "Denim Catalog",
-        codeName: "denim",
+        productCode: "denim",
         img: Denim
       },
       {
         id: 3,
         name: "Short Pants Catalog",
-        codeName: "short-pants",
+        productCode: "short-pants",
         img: ShortPants
       }
     ]
@@ -89,7 +92,7 @@ const initialState = {
           id: 0,
           name: "Tshirt Catalog",
           type: "tshirt",
-          codeName: "YTTS220220",
+          productCode: "YTTS220220",
           gender: ["men", "women"],
           color: ["black", "white", "red"],
           price: 95000,
@@ -99,7 +102,7 @@ const initialState = {
           id: 1,
           name: "Lekbong Catalog",
           type: "lekbong",
-          codeName: "YTLB220220",
+          productCode: "YTLB220220",
           gender: ["men", "women"],
           color: ["blue", "red", "white"],
           price: 85000,
@@ -109,7 +112,7 @@ const initialState = {
           id: 2,
           name: "Denim Catalog",
           type: "long-pants",
-          codeName: "YTLP220220",
+          productCode: "YTLP220220",
           gender: ["men", "women"],
           color: ["white", "blue", "red"],
           price: 200000,
@@ -119,7 +122,7 @@ const initialState = {
           id: 3,
           name: "Short Pants Catalog",
           type: "short-pants",
-          codeName: "YTSP220220",
+          productCode: "YTSP220220",
           gender: ["men", "women"],
           color: ["red", "black", "white"],
           price: 85000,
@@ -129,7 +132,7 @@ const initialState = {
           id: 4,
           name: "Short Pants Catalog",
           type: "short-pants",
-          codeName: "YTSP220220",
+          productCode: "YTSP220220",
           gender: ["men", "women"],
           color: ["red", "black", "white"],
           price: 85000,
@@ -139,7 +142,7 @@ const initialState = {
           id: 5,
           name: "Denim Catalog",
           type: "long-pants",
-          codeName: "YTLP220220",
+          productCode: "YTLP220220",
           gender: ["men", "women"],
           color: ["white", "blue", "red"],
           price: 200000,
@@ -149,7 +152,7 @@ const initialState = {
           id: 6,
           name: "Lekbong Catalog",
           type: "lekbong",
-          codeName: "YTLB220220",
+          productCode: "YTLB220220",
           gender: ["men", "women"],
           color: ["blue", "red", "white"],
           price: 85000,
@@ -159,7 +162,7 @@ const initialState = {
           id: 7,
           name: "Tshirt Catalog",
           type: "tshirt",
-          codeName: "YTTS220220",
+          productCode: "YTTS220220",
           gender: ["men", "women"],
           color: ["black", "white", "red"],
           price: 95000,
@@ -169,7 +172,7 @@ const initialState = {
           id: 8,
           name: "Tshirt",
           type: "tshirt",
-          codeName: "YTTS220220",
+          productCode: "YTTS220220",
           gender: ["men", "women"],
           color: ["black", "white", "red"],
           price: 95000,
@@ -179,7 +182,7 @@ const initialState = {
           id: 9,
           name: "Lekbong Catalog",
           type: "lekbong",
-          codeName: "YTLB220220",
+          productCode: "YTLB220220",
           gender: ["men", "women"],
           color: ["blue", "red", "white"],
           price: 85000,
@@ -189,7 +192,7 @@ const initialState = {
           id: 10,
           name: "Denim Catalog",
           type: "long-pants",
-          codeName: "YTLP220220",
+          productCode: "YTLP220220",
           gender: ["men", "women"],
           color: ["white", "blue", "red"],
           price: 200000,
@@ -199,7 +202,7 @@ const initialState = {
           id: 11,
           name: "Short Pants Catalog",
           type: "short-pants",
-          codeName: "YTSP220220",
+          productCode: "YTSP220220",
           gender: ["men", "women"],
           color: ["red", "black", "white"],
           price: 85000,
@@ -209,7 +212,7 @@ const initialState = {
           id: 12,
           name: "Short Pants Catalog",
           type: "short-pants",
-          codeName: "YTSP220220",
+          productCode: "YTSP220220",
           gender: ["men", "women"],
           color: ["red", "black", "white"],
           price: 85000,
@@ -219,7 +222,7 @@ const initialState = {
           id: 13,
           name: "Denim Catalog",
           type: "long-pants",
-          codeName: "YTLP220220",
+          productCode: "YTLP220220",
           gender: ["men", "women"],
           color: ["white", "blue", "red"],
           price: 200000,
@@ -229,7 +232,7 @@ const initialState = {
           id: 14,
           name: "Lekbong Catalog",
           type: "lekbong",
-          codeName: "YTLB220220",
+          productCode: "YTLB220220",
           gender: ["men", "women"],
           color: ["blue", "red", "white"],
           price: 85000,
@@ -239,7 +242,7 @@ const initialState = {
           id: 15,
           name: "Tshirt Catalog",
           type: "tshirt",
-          codeName: "YTTS220220",
+          productCode: "YTTS220220",
           gender: ["men", "women"],
           color: ["black", "white", "red"],
           price: 95000,
@@ -268,15 +271,28 @@ const initialState = {
         name: "Best Seller"
       }
     ]
+  },
+  dataDetailProduct: {
+    buttonAddToCart: false
   }
 };
 
 const reducer = (state, action) => {
   switch (action.type) {
+    case "data-navbar-large":
+      return {
+        ...state,
+        dataNavbarLarge: action.data
+      };
     case "data-landing":
       return {
         ...state,
         dataLanding: action.data
+      };
+    case "data-detail-product":
+      return {
+        ...state,
+        dataDetailProduct: action.data
       };
     default:
       console.log("error case reducer on root context");

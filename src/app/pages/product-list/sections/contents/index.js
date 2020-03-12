@@ -29,7 +29,7 @@ const Contents = ({ state, dispatch, location }) => {
               key={index}
               img={item.img}
               name={item.name}
-              codeName={item.codeName}
+              productCode={item.productCode}
               type={item.type}
               gender={item.gender}
               color={item.color}

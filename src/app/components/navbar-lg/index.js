@@ -8,7 +8,7 @@ import SubmenuMen from "./components/submenu-men";
 import SubmenuWomen from "./components/submenu-women";
 import SubmenuCollabs from "./components/submenu-collabs";
 
-const Navbar = () => {
+const Navbar = ({ state, dispatch }) => {
   const refSubmenuMen = React.useRef();
   const refSubmenuWomen = React.useRef();
   const refSubmenuCollabs = React.useRef();
@@ -64,7 +64,9 @@ const Navbar = () => {
           <NavbarMenuRight.Left>
             <ShoppingBag color="black" size="24" />
           </NavbarMenuRight.Left>
-          <NavbarMenuRight.Middle>0</NavbarMenuRight.Middle>
+          <NavbarMenuRight.Middle>
+            {state.dataNavbarLarge.dataCartCounter}
+          </NavbarMenuRight.Middle>
           <NavbarMenuRight.Right>
             <NavLink to={"/wishlist"}>
               <Heart color="black" size="24" />

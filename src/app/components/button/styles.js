@@ -1,18 +1,53 @@
 import styled from "styled-components";
 import color from "config/guidlines/color";
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
+  cursor: pointer;
+  width: ${props => props.width && props.width};
+  background: ${color.brand.primaryBlack};
+  height: unset;
+  border: unset;
+
+  &.disabled {
+    border: 1px solid red;
+    /* border: 1px solid ${color.gray}; */
+    cursor: not-allowed;
+    background: #e8e9e9;
+  }
+
+  &.btn-page {
+    border-radius: 5em;
+    color: ${color.brand.primaryWhite};
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5vw;
+    height: 2.5vw;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0px 5px;
+  }
+`;
+export const Container = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: ${color.brand.primaryBlack};
+  background: transparent;
+  border: unset;
   color: #fff;
-  cursor: pointer;
-  width: ${props => props.width && props.width};
+  width: 100%;
   padding: 8px 0px;
+  cursor: inherit;
 
-  :hover {
-    opacity: 0.8;
+  /* 
+    :hover {
+      opacity: 0.8;
+    } 
+  */
+
+  &.disabled {
+    color: ${color.gray};
+    pointer-events: none;
   }
 
   svg {

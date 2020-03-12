@@ -7,7 +7,7 @@ import Sort from "app/components/sort";
 import { Plus, Minus } from "react-feather";
 import { P3 } from "app/components/font";
 
-const ProductList = ({ state, dispatch, location }) => {
+const ProductList = ({ state, dispatch, location, match }) => {
   const [filter, setFilter] = React.useState(true);
   return (
     <Container.Wrapper>

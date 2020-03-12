@@ -18,11 +18,11 @@ import DetailProduct from "app/pages/detail-product";
 // import AuthenticatedRoute from "./AuthenticatedRoute";
 // import UnauthenticatedRoute from "./UnauthenticatedRoute";
 
-const Routes = ({ state, dispatch, location, history, match }) => {
+const Routes = ({ state, dispatch }) => {
   return (
     <React.Suspense fallback={null}>
-      <NavbarSmall />
-      <NavbarLarge />
+      <NavbarSmall state={state} dispatch={dispatch} />
+      <NavbarLarge state={state} dispatch={dispatch} />
       <Switch>
         {/* <UnauthenticatedRoute
           exact
@@ -32,207 +32,135 @@ const Routes = ({ state, dispatch, location, history, match }) => {
         /> */}
         {/* <AuthenticatedRoute path="/home" component={Home} props={childProps} /> */}
         <Route
+          path="/products/longpants/:productCode"
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
+          )}
+        />
+        <Route
           path="/products/longpants"
-          component={() => (
-            <ProductList
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
+          )}
+        />
+        <Route
+          path="/products/shortpants/:productCode"
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/products/shortpants"
-          component={() => (
-            <ProductList
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
+          )}
+        />
+        <Route
+          path="/products/jacket/:productCode"
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/products/jacket"
-          component={() => (
-            <ProductList
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
+          )}
+        />
+        <Route
+          path="/products/sweatshirt/:productCode"
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/products/sweatshirt"
-          component={() => (
-            <ProductList
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
+          )}
+        />
+        <Route
+          path="/products/shirt/:productCode"
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/products/shirt"
-          component={() => (
-            <ProductList
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
-          path="/products/tshirt/:productName"
-          component={() => (
-            <DetailProduct
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          path="/products/tshirt/:productCode"
+          component={props => (
+            <DetailProduct {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/products/tshirt/"
-          component={() => (
-            <ProductList
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <ProductList {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/products"
-          component={() => (
-            <Products
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <Products {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/women-size-guide"
-          component={() => (
-            <WomenSizeGuide
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <WomenSizeGuide {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/men-size-guide"
-          component={() => (
-            <MenSizeGuide
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <MenSizeGuide {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/faqs"
-          component={() => (
-            <Faqs
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <Faqs {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/careers"
-          component={() => (
-            <Careers
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <Careers {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/location"
-          component={() => (
-            <Location
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <Location {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/heritage"
-          component={() => (
-            <Heritage
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <Heritage {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/shipping-and-delivery"
-          component={() => (
-            <ShippingAndDelivery
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <ShippingAndDelivery {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/returns"
-          component={() => (
-            <Returns
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <Returns {...props} state={state} dispatch={dispatch} />
           )}
         />
         <Route
           path="/"
-          component={() => (
-            <Landing
-              state={state}
-              dispatch={dispatch}
-              location={location}
-              history={history}
-              match={match}
-            />
+          component={props => (
+            <Landing {...props} state={state} dispatch={dispatch} />
           )}
         />
       </Switch>

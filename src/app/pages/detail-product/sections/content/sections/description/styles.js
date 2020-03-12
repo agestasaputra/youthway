@@ -9,6 +9,7 @@ export const Desc = {
     position: -webkit-sticky;
     top: 35%;
     margin-bottom: 60px;
+    width: 80%;
   `,
   Head: styled.div``,
   Title: styled.div`
@@ -74,9 +75,9 @@ export const Desc = {
     }
   `,
   Size: styled.div`
+    margin-bottom: 30px;
     .title {
       /* color: ${color.gray}; */
-      margin-bottom: 5px;
     }
   `,
   Button: styled.div`

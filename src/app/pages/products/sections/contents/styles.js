@@ -25,6 +25,15 @@ export const Container = {
     display: flex;
     flex-flow: row nowrap;
     /* height: 50vw; */
+
+    a {
+      padding: unset;
+      margin: unset;
+      background: unset;
+      color: unset;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+    }
   `
 };
 

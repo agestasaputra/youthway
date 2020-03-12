@@ -1,14 +1,21 @@
 import React from "react";
-import { Container } from "./styles";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { fab } from "@fortawesome/free-brands-svg-icons";
-// import { fabWhatsapp } from "@fortawesome/free-solid-svg-icons";
+import { Container, SocialMedia } from "./styles";
+import { H4 } from "app/components/font";
 
 const Share = () => {
   return (
     <Container>
-      <i class="fa fa-whatsapp"></i>
-      {/* <FontAwesomeIcon icon="whatsapp" /> */}
+      <H4 className="title">Share</H4>
+      <SocialMedia>
+        {/* <i className="fab fa-whatsapp-square" />
+        <i className="fab fa-twitter-square" />
+        <i className="fab fa-facebook-square" />
+        <i className="fab fa-instagram-square" /> */}
+        <i className="fab fa-whatsapp" />
+        <i className="fab fa-twitter" />
+        <i className="fab fa-facebook" />
+        <i className="fab fa-instagram" />
+      </SocialMedia>
     </Container>
   );
 };

@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   border: unset;
 
   &.disabled {
-    border: 1px solid red;
+    border: 1px solid #9c9c9c;
     /* border: 1px solid ${color.gray}; */
     cursor: not-allowed;
     background: #e8e9e9;
@@ -39,10 +39,10 @@ export const Container = styled.button`
   padding: 8px 0px;
   cursor: inherit;
 
-  /* 
+  /*
     :hover {
       opacity: 0.8;
-    } 
+    }
   */
 
   &.disabled {

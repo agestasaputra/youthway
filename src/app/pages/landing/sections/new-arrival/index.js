@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import CardNewArrival from "app/components/card/new-arrival";
 
 const NewArrival = ({ dataNewArrival, location }) => {
-  console.log("cek dataNewArrival:", dataNewArrival);
+//   console.log("cek dataNewArrival:", dataNewArrival);
   const settings = {
     dots: false,
     infinite: false,

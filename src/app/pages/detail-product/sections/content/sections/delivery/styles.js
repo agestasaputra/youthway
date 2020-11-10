@@ -3,6 +3,7 @@ import color from "config/guidlines/color";
 
 export const Container = styled.div`
   width: 50%;
+  margin-bottom: 50px;
 
   .title {
     margin-bottom: 10px;

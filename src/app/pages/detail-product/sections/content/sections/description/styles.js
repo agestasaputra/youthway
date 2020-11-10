@@ -84,5 +84,9 @@ export const Desc = {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+
+    .btn-add-to-cart {
+        display: flex;
+    }
   `
 };

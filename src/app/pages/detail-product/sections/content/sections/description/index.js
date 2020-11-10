@@ -6,7 +6,9 @@ import Size from "app/components/size";
 import Button from "app/components/button";
 
 const Description = ({ state, dispatch }) => {
-  // console.log("cek state:", state);
+  console.log("cek state on desc:", state);
+//   const [color, setColor] = React.useState(null);
+  const [size, setSize] = React.useState(null);
 
   const addToCartHandler = () => {
     dispatch({
@@ -24,54 +26,81 @@ const Description = ({ state, dispatch }) => {
     return;
   };
 
+  const sizeHandler = (size) => {
+    console.log('sizeHandler:', size);
+
+    // remove active mark
+    const elementExtraSmallSize = document.querySelector(`.btn-size-xs`);
+    const elementSmallSize = document.querySelector(`.btn-size-s`);
+    const elementMediumSize = document.querySelector(`.btn-size-m`);
+    const elementLargeSize = document.querySelector(`.btn-size-l`);
+    const elementExtraLargeSize = document.querySelector(`.btn-size-xl`);
+    const elementDoubleExtraLargeSize = document.querySelector(`.btn-size-xxl`);
+    elementExtraSmallSize.classList.remove("active");
+    elementSmallSize.classList.remove("active");
+    elementMediumSize.classList.remove("active");
+    elementLargeSize.classList.remove("active");
+    elementExtraLargeSize.classList.remove("active");
+    elementDoubleExtraLargeSize.classList.remove("active");
+
+    const elementSize = document.querySelector(`.btn-size-${size.toLowerCase()}`);
+    elementSize.classList.add("active");
+    setSize(size);
+  }
+
   return (
     <Container>
       <Desc.Wrapper>
         {/* <Desc.Head>Head</Desc.Head> */}
         <Desc.Title>
-          <H1 className="title">Gazelle Public</H1>
+          <H1 className="title">{state.dataDetailProduct.name}</H1>
         </Desc.Title>
         <Desc.Price>
-          <H1 className="price">IDR 90K</H1>
+        <H1 className="price">IDR {state.dataDetailProduct.price}</H1>
         </Desc.Price>
         <Desc.Desc>
           <H5 className="title">Description:</H5>
           <ul>
-            <li>
-              <P3 className="desc">Manufacturer: China</P3>
-            </li>
-            <li>
-              <P3 className="desc">Material: Shell 100% cotton</P3>
-            </li>
-            <li>
-              <P3 className="desc">
-                Care: Machine wash in cold water. Do not blecah and tumble dry.
-                Warm iron. Do not dry cleanli
-              </P3>
-            </li>
+            {
+              state.dataDetailProduct.description && state.dataDetailProduct.description.length > 0 &&
+                state.dataDetailProduct.description.map((item, index) => (
+                    <li key={index}>
+                        <P3 className="desc">{item.name}</P3>
+                    </li>
+                ))
+            }
           </ul>
         </Desc.Desc>
         <Desc.Color>
           <H5 className="title">Color:</H5>
-          <Circle className={`circle-black active`} color="black" size="30" />
-          <Circle className={`circle-red`} color="red" size="30" />
+          {
+              state.dataDetailProduct.color && state.dataDetailProduct.color.length > 0 &&
+                state.dataDetailProduct.color.map((item, index) => (
+                    <Circle key={index} className={`circle-${item.name.toLowerCase()}`} color={item.name.toLowerCase()} size="30" />
+                ))
+            }
         </Desc.Color>
         <Desc.Size>
           <H5 className="title">Size:</H5>
-          <Size size="S" className="active" />
-          <Size size="M" />
-          <Size size="L" />
-          <Size size="XL" />
-          <Size size="XXL" />
-          <Size size="XXXL" />
+          {
+            state.dataDetailProduct.size && state.dataDetailProduct.size.length > 0 &&
+                state.dataDetailProduct.size.map((item, index) => (
+                    <Size key={index} className={`btn-size-${item.name.toLowerCase()}`} size={item.name} onClick={() => sizeHandler(item.name)} />
+                ))
+          }
         </Desc.Size>
         <Desc.Button>
           <Button
-            className={`${
-              state.dataDetailProduct.buttonAddToCart
-                ? `btn-add-to-cart disabled`
-                : `btn-add-to-cart`
-            }`}
+            className={`${size ? `btn-add-to-cart` : `btn-add-to-cart disabled`}`}
+            // className={`${
+            //   state.dataDetailProduct.buttonAddToCart
+            //     ? `btn-add-to-cart disabled`
+            //     : `btn-add-to-cart`
+            // }`}
+            // className={`${
+            //   size ? state.dataDetailProduct.buttonAddToCart ? `btn-add-to-cart disabled` : 'btn-add-to-cart'
+            //   : `btn-add-to-cart disabled`
+            // }`}
             width={`85%`}
             onClick={addToCartHandler}
           >

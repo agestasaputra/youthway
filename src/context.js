@@ -273,7 +273,109 @@ const initialState = {
     ]
   },
   dataDetailProduct: {
-    buttonAddToCart: false
+    buttonAddToCart: false,
+    name: 'Gazelle Public',
+    price: 90000,
+    description: [
+        {
+            id: 0,
+            name: 'Manufacturer: China'
+        },
+        {
+            id: 1,
+            name: 'Material: Shell 100% cotton'
+        },
+        {
+            id: 2,
+            name: 'Care: Machine wash in cold water. Do not bleach and tumble dry. Warm Iron. Do not dry clean'
+        }
+    ],
+    color: [
+        {
+            id: 0,
+            name: 'Red',
+            code: '#ff0000'
+        },
+        {
+            id: 1,
+            name: 'Black',
+            code: '#000000'
+        }
+    ],
+    size: [
+        {
+            id: 0,
+            name: 'XS',
+            desc: 'Extra Small',
+        },
+        {
+            id: 1,
+            name: 'S',
+            desc: 'Small',
+        },
+        {
+            id: 2,
+            name: 'M',
+            desc: 'Medium',
+        },
+        {
+            id: 3,
+            name: 'L',
+            desc: 'Large',
+        },
+        {
+            id: 4,
+            name: 'XL',
+            desc: 'Extra Large',
+        },
+        {
+            id: 5,
+            name: 'XXL',
+            desc: 'Double Extra Large',
+        }
+    ],
+    dataNewArrival: [
+        {
+          id: 0,
+          name: "Tshirt Catalog",
+          type: "tshirt",
+          productCode: "YTTS220220",
+          gender: ["men", "women"],
+          color: ["black", "white", "red"],
+          price: 95000,
+          img: Tshirt
+        },
+        {
+          id: 1,
+          name: "Lekbong Catalog",
+          type: "lekbong",
+          productCode: "YTLB220220",
+          gender: ["men", "women"],
+          color: ["blue", "red", "white"],
+          price: 85000,
+          img: Lekbong
+        },
+        {
+          id: 2,
+          name: "Denim Catalog",
+          type: "long-pants",
+          productCode: "YTLP220220",
+          gender: ["men", "women"],
+          color: ["white", "blue", "red"],
+          price: 200000,
+          img: Denim
+        },
+        {
+          id: 3,
+          name: "Short Pants Catalog",
+          type: "short-pants",
+          productCode: "YTSP220220",
+          gender: ["men", "women"],
+          color: ["red", "black", "white"],
+          price: 85000,
+          img: ShortPants
+        }
+    ]
   }
 };
 
@@ -292,7 +394,10 @@ const reducer = (state, action) => {
     case "data-detail-product":
       return {
         ...state,
-        dataDetailProduct: action.data
+        dataDetailProduct: {
+            ...state.dataDetailProduct,
+            ...action.data
+        }
       };
     default:
       console.log("error case reducer on root context");
